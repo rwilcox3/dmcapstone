@@ -1,0 +1,14 @@
+{
+  "name": "@dizdata/radial-dendrogram-topic-modeling-visualization",
+  "main": "28e4937dc7c88334@801.js",
+  "version": "801.0.0",
+  "homepage": "https://observablehq.com/@dizdata/radial-dendrogram-topic-modeling-visualization",
+  "author": {
+    "name": "Garry Diz",
+    "url": "https://observablehq.com/@dizdata"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
