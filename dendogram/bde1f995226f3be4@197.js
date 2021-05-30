@@ -70,7 +70,7 @@ function autoBox() {
 }
 )});
   main.variable(observer("data")).define("data", ["FileAttachment"], function(FileAttachment){return(
-FileAttachment("flare-2.json").json()
+FileAttachment("./flare-2.json").json()
 )});
   main.variable(observer("width")).define("width", function(){return(
 975
