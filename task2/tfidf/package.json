@@ -1,0 +1,14 @@
+{
+  "name": "@kerryrodden/introduction-to-text-analysis-with-tf-idf",
+  "main": "1d6ee77042391d23@2357.js",
+  "version": "2357.0.0",
+  "homepage": "https://observablehq.com/@kerryrodden/introduction-to-text-analysis-with-tf-idf",
+  "author": {
+    "name": "Kerry Rodden",
+    "url": "https://observablehq.com/@kerryrodden"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
