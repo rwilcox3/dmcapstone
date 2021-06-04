@@ -1,0 +1,14 @@
+{
+  "name": "@mutsimo/untitled",
+  "main": "235822fc7137f9e8@217.js",
+  "version": "217.0.0",
+  "homepage": "https://observablehq.com/@mutsimo/untitled",
+  "author": {
+    "name": "mutsimo",
+    "url": "https://observablehq.com/@mutsimo"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
