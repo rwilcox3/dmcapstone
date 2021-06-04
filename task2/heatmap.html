@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>d3-ez : Heat Map (Tabular) Example</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://raw.githack.com/jamesleesaunders/d3-ez/master/dist/d3-ez.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://rawgit.com/jamesleesaunders/d3.ez/master/dist/d3-ez.css" />
+</head>
+
+<body>
+  <div id="chartholder"></div>
+  <br/>
+  <div>Value: <span id="message"></span></div>
+
+  <script type="text/javascript">
+    d3.json("town2town.json").then(function(json) {
+      // Convert json to d3-ez data format
+      var data = d3.nest().key(function(d) {
+        return d.TownA;
+      }).entries(json.Data).map(function(obj) {
+        obj.values = obj.values.map(function(values) {
+          return {
+            key: values.TownB,
+            value: values.Value
+          };
+        });
+        return obj;
+      });
+
+      var colors = [d3.rgb(214, 245, 0), d3.rgb(255, 166, 0), d3.rgb(255, 97, 0), d3.rgb(200, 65, 65), d3.rgb(0, 0, 0)];
+      var chart = d3.ez.chart.heatMapTable().colors(colors);
+      var legend = d3.ez.component.legend().title('Widget Counts');
+      var title = d3.ez.component.title().mainText(json.Metadata.Title).subText(json.Metadata.Detail);
+
+      // Create chart base
+      var myChart = d3.ez.base()
+        .width(750)
+        .height(550)
+        .chart(chart)
+        .legend(legend)
+        .title(title)
+        .on("customValueMouseOver", function(d, i) {
+          d3.select("#message").text(d.value);
+        });
+
+      d3.select('#chartholder')
+        .datum(data)
+        .call(myChart);
+    });
+  </script>
+</body>
+
+</html>
