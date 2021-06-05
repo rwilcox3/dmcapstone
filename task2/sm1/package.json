@@ -1,0 +1,14 @@
+{
+  "name": "@meetamit/similarity-matrix",
+  "main": "60e89f36f47b4f23@734.js",
+  "version": "734.0.0",
+  "homepage": "https://observablehq.com/@meetamit/similarity-matrix",
+  "author": {
+    "name": "Amit Sch",
+    "url": "https://observablehq.com/@meetamit"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
