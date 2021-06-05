@@ -1,0 +1,14 @@
+{
+  "name": "@nitaku/similarity-matrix",
+  "main": "154f014d03350d1d@117.js",
+  "version": "117.0.0",
+  "homepage": "https://observablehq.com/@nitaku/similarity-matrix",
+  "author": {
+    "name": "Matteo Abrate",
+    "url": "https://observablehq.com/@nitaku"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
